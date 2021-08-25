@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex01_main.c                                        :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgenevey <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 17:56:40 by lgenevey          #+#    #+#             */
-/*   Updated: 2021/08/25 12:20:02 by lgenevey         ###   ########.fr       */
+/*   Created: 2021/08/25 12:23:25 by lgenevey          #+#    #+#             */
+/*   Updated: 2021/08/25 20:12:01 by lgenevey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "./ex01/ft_range.c"
-
-int	main(void)
-{
-	int	*tableau;
-	int	i;
-
-	i = 0;
-	tableau = ft_range(-15, 20);
-	while(i < 35)
-	{
-		printf("%d ", tableau[i]);
-		i++;
-	}
-	return(0);
-}
+#ifndef FT_H
+# define FT_H
+void	ft_putchar(char c);
+void	ft_swap(int *a,int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
+#endif

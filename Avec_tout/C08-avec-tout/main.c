@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex01_main.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgenevey <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 17:56:40 by lgenevey          #+#    #+#             */
-/*   Updated: 2021/08/25 12:20:02 by lgenevey         ###   ########.fr       */
+/*   Created: 2021/08/25 20:20:13 by lgenevey          #+#    #+#             */
+/*   Updated: 2021/08/25 20:27:56 by lgenevey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "./ex01/ft_range.c"
 
-int	main(void)
+#include "./ex00/ft_boolean.h"
+
+void	ft_putstr(char *str)
 {
-	int	*tableau;
-	int	i;
+	while(*str)
+		write(1, str++, 1);
+}
 
-	i = 0;
-	tableau = ft_range(-15, 20);
-	while(i < 35)
-	{
-		printf("%d ", tableau[i]);
-		i++;
-	}
-	return(0);
+t_bool	ft_is_even(int nbr)
+{
+	return ((EVEN(nbr)) ? TRUE : FALSE);
+}
+
+int	main(int argc, char **argv)
+{
+	(void) argv;
+	if (ft_is_even(argc -1) == TRUE)
+		ft_putstr(EVEN_MSG);
+	else
+		ft_putstr(ODD_MSG);
+	return (SUCCESS);
 }

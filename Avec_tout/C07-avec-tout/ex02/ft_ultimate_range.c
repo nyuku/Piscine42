@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex01_main.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgenevey <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 17:56:40 by lgenevey          #+#    #+#             */
-/*   Updated: 2021/08/25 12:20:02 by lgenevey         ###   ########.fr       */
+/*   Created: 2021/08/25 11:17:08 by lgenevey          #+#    #+#             */
+/*   Updated: 2021/08/25 12:22:00 by lgenevey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "./ex01/ft_range.c"
 
-int	main(void)
+int	ft_ultimate_range(int **range, int min, int max)
 {
-	int	*tableau;
 	int	i;
+	int	size;
 
-	i = 0;
-	tableau = ft_range(-15, 20);
-	while(i < 35)
-	{
-		printf("%d ", tableau[i]);
-		i++;
-	}
-	return(0);
+	size = max - min;
+	range[i]
 }

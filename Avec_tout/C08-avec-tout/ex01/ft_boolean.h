@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex01_main.c                                        :+:      :+:    :+:   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgenevey <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 17:56:40 by lgenevey          #+#    #+#             */
-/*   Updated: 2021/08/25 12:20:02 by lgenevey         ###   ########.fr       */
+/*   Created: 2021/08/25 20:13:04 by lgenevey          #+#    #+#             */
+/*   Updated: 2021/08/25 20:27:59 by lgenevey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include "./ex01/ft_range.c"
 
-int	main(void)
-{
-	int	*tableau;
-	int	i;
-
-	i = 0;
-	tableau = ft_range(-15, 20);
-	while(i < 35)
-	{
-		printf("%d ", tableau[i]);
-		i++;
-	}
-	return(0);
-}
+#ifndef FT_BOOLEAN_H
+# define FT_BOOLEAN_H
+# define EVEN_MSG "I have an even number of arguments."
+# define ODD_MSG "I have an odd number of arguments."
+# define SUCCESS 0
+#endif
